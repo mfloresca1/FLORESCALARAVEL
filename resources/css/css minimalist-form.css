@@ -1,0 +1,165 @@
+/* Minimalist Student Form CSS */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background-color: #fafafa;
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main container */
+body > * {
+    background: #ffffff;
+    max-width: 480px;
+    width: 100%;
+    padding: 3rem 2.5rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+}
+
+/* Typography */
+h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #0a0a0a;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: -0.025em;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 1px solid #d4d4d4;
+    border-radius: 1px;
+    background-color: #ffffff;
+    font-size: 0.95rem;
+    font-family: inherit;
+    color: #262626;
+    transition: border-color 0.15s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-color: #0a0a0a;
+}
+
+input::placeholder {
+    color: #a3a3a3;
+    font-weight: 300;
+}
+
+/* Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    border: none;
+    border-radius: 1px;
+    font-size: 0.95rem;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background-color 0.15s ease;
+    letter-spacing: 0.025em;
+}
+
+button[type="submit"]:hover {
+    background-color: #262626;
+}
+
+button[type="submit"]:active {
+    background-color: #404040;
+    transform: translateY(1px);
+}
+
+/* Remove default br styling */
+br {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    body {
+        padding: 1rem;
+    }
+    
+    body > * {
+        padding: 2rem 1.5rem;
+    }
+    
+    h1 {
+        font-size: 1.375rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    button[type="submit"] {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Ultra minimal variant - uncomment to use */
+/*
+body {
+    background-color: #ffffff;
+}
+
+body > * {
+    border: none;
+    padding: 2rem 1rem;
+    max-width: 400px;
+}
+
+input[type="text"],
+input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    border-radius: 0;
+    padding: 0.75rem 0;
+    background-color: transparent;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-bottom-color: #0a0a0a;
+}
+
+button[type="submit"] {
+    background-color: transparent;
+    color: #0a0a0a;
+    border: 1px solid #0a0a0a;
+    border-radius: 0;
+}
+
+button[type="submit"]:hover {
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+*/
